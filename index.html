@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>KataKita Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- AUDIO -->
+<audio id="soundBenar" src="benar.mp3"></audio>
+<audio id="soundSalah" src="salah.mp3"></audio>
+<audio id="soundSelesai" src="selesai.mp3"></audio>
+
+<!-- ================= HALAMAN AWAL ================= -->
+<div id="startScreen" class="card">
+    <h1>🚀 KataKita Adventure</h1>
+    <p>Masukkan Nama Pemain</p>
+    <input type="text" id="playerName" placeholder="Nama kamu">
+    <br><br>
+    <button onclick="startGame()">Mulai Game</button>
+</div>
+
+<!-- ================= HALAMAN GAME ================= -->
+<div id="gameScreen" class="card hidden">
+
+    <!-- FRAME SOAL -->
+    <div class="question-frame">
+        <h2 id="question"></h2>
+    </div>
+
+    <!-- TIMER -->
+    <p id="timer">⏱️ Waktu: 10 detik</p>
+
+    <!-- JAWABAN -->
+    <div id="answers"></div>
+
+    <!-- FEEDBACK BENAR / SALAH -->
+    <p id="feedback"></p>
+
+    <!-- PROGRESS SOAL -->
+    <p id="progress"></p>
+</div>
+
+<!-- ================= HALAMAN AKHIR ================= -->
+<div id="endScreen" class="card hidden">
+    <h1>🎉 Game Selesai</h1>
+
+    <!-- SKOR PEMAIN -->
+    <p id="finalScore"></p>
+
+    <!-- DAFTAR PEMAIN -->
+    <h3>📋 Daftar Pemain</h3>
+    <ul id="playerList"></ul>
+
+    <!-- TOMBOL MAIN ULANG -->
+    <button onclick="location.reload()">Main Lagi</button>
+</div>
+
+<!-- SCRIPT -->
+<script src="script.js"></script>
+
+</body>
+</html>

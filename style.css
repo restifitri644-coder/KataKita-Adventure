@@ -1,0 +1,148 @@
+/* =====================
+   RESET & BODY
+===================== */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+    background: url('background.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* =====================
+   CARD UTAMA
+===================== */
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    width: 75%;
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* =====================
+   FRAME SOAL
+===================== */
+.question-frame {
+    background: #f0f8ff;
+    border: 4px solid #F5F5F5;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.question-frame h2 {
+    margin: 0;
+    font-size: 22px;
+    color: #333;
+}
+
+/* =====================
+   TIMER
+===================== */
+#timer {
+    font-size: 18px;
+    font-weight: bold;
+    color: #F44336;
+    margin: 10px 0 20px;
+}
+
+/* =====================
+   TOMBOL JAWABAN & UMUM
+===================== */
+button {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #2196F3;
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #FFEB3B;
+    color: #333;
+}
+
+/* =====================
+   INPUT NAMA
+===================== */
+input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 60%;
+    text-align: center;
+}
+
+/* =====================
+   FEEDBACK BENAR / SALAH
+===================== */
+#feedback {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* =====================
+   PROGRESS SOAL
+===================== */
+#progress {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* =====================
+   DAFTAR PEMAIN
+===================== */
+#playerList {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+#playerList li {
+    background: #E3F2FD;
+    margin: 6px auto;
+    padding: 10px;
+    width: 70%;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* =====================
+   HIDDEN
+===================== */
+.hidden {
+    display: none;
+}
+
+/* =====================
+   RESPONSIVE (HP)
+===================== */
+@media (max-width: 600px) {
+    .card {
+        width: 90%;
+        margin: 40px auto;
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    input {
+        width: 90%;
+    }
+}
